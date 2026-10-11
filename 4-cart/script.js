@@ -52,7 +52,7 @@ function addToCart(id) {
 
 function increaseQty(id) {
   const item = cart.find((i) => i.id === id);
-  item.qty;
+  if (item) item.qty += 1;
   renderCart();
 }
 
